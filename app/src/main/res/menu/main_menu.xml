@@ -5,4 +5,6 @@
         android:id="@+id/menu_spanish" />
     <item android:title="English"
         android:id="@+id/menu_english" />
+    <item android:title="Reset Settings"
+        android:id="@+id/menu_reset" />
 </menu>
