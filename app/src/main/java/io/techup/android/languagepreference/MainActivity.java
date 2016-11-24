@@ -13,16 +13,16 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         new AlertDialog.Builder(this)
-                .setIcon(android.R.drawable.ic_language)
-                .setTitle("Are you sure?")
-                .setMessage("Do you definitely want to do this")
-                .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                .setIcon(R.drawable.ic_language_black_24dp)
+                .setTitle("Choose a language")
+                .setMessage("Which language do you like?")
+                .setPositiveButton("SPANISH", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
                         Toast.makeText(getApplicationContext(), "its done", Toast.LENGTH_LONG).show();
                     }
                 })
-                .setNegativeButton("No", null)
+                .setNegativeButton("ENGLISH", null)
                 .show();
     }
 }
